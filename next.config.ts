@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
     nodeMiddleware: true,
     authInterrupts: true,
   },
+  transpilePackages: ['next-auth'],
   /* config options here */
   webpack: (config, { isServer }) => {
     if (!isServer) {
